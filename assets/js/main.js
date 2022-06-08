@@ -1,3 +1,12 @@
+const judgePageChange = (cb) => {
+    // https://blog.csdn.net/weixin_47436633/article/details/124421798
+    // 分别兼容：['chrome', '火狐', 'ie']
+    // 需要兼容其他浏览器添加参数判断进去就行了
+    ['webkitVisibility', 'mozvisibility', 'msvisibility']
+    .forEach(item =>
+      `${item}State` in document &&
+      document.addEventListener(`${item.toLowerCase()}change`, () => cb(document[`${item}State`])))
+  }
 $(document).ready(() => {
     root = $('body');
     video = $('#background')[0];
