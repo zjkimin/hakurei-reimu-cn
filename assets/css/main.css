@@ -44,7 +44,7 @@
     font-size: 400%;
     color: white;
     text-shadow: 0 0 13px pink;
-    animation: float 2s ease-in-out 0s infinite normal;
+    animation: float 2s ease 0s infinite normal;
     animation-play-state: paused;
 }
 
@@ -56,7 +56,7 @@
     font-size: 150%;
     color: wheat;
     text-shadow: 0 0 5px pink;
-    animation: float 2s ease-in-out 0s infinite normal;
+    animation: float 2s ease 0s infinite normal;
     animation-play-state: paused;
 }
 

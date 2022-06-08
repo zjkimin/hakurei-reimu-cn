@@ -13,8 +13,10 @@ $(document).ready(() => {
     dom_moe=$('#Moe')[0];
     // console.log(dom_tit,dom_moe)
     video.addEventListener('play', function (){
-        dom_tit.style.animationPlayState='running';
-        dom_moe.style.animationPlayState='running';
+        setTimeout(function(){
+            dom_tit.style.animationPlayState='running';
+            dom_moe.style.animationPlayState='running';
+        },59)
     })
     root.click(function () {
         // video.muted=false;
