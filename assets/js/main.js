@@ -20,13 +20,23 @@ $(document).ready(() => {
     });
     dom_tit=$('#mtitle')[0];
     dom_moe=$('#Moe')[0];
+    function setTextAnimState(state){
+        // state: running | paused
+        dom_tit.style.animationPlayState=state;
+        dom_moe.style.animationPlayState=state;
+    }
     // console.log(dom_tit,dom_moe)
-    video.addEventListener('play', function (){
+    video.addEventListener('canplay', function (){
         setTimeout(function(){
-            dom_tit.style.animationPlayState='running';
-            dom_moe.style.animationPlayState='running';
-        },59)
-    })
+            setTextAnimState('running');
+        },59);
+    });
+    judgePageChange((status)=> {
+        // console.log(status)
+        if (status=='visible'){
+            video.play();
+        }
+    });      
     root.click(function () {
         // video.muted=false;
         video.play();
