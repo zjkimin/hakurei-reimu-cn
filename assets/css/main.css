@@ -5,7 +5,7 @@
     object-fit: cover;
     top: 0;
     left: 0;
-    /* filter: brightness(1.2); */
+    filter: brightness(0.9);
     z-index: -2;
 }
 
@@ -31,6 +31,7 @@
     bottom: 50%;
     font-size: 400%;
     color: white;
+    text-shadow: 0 0 13px pink;
 }
 
 #Moe {
@@ -40,6 +41,7 @@
     left: 61%;
     font-size: 150%;
     color: wheat;
+    text-shadow: 0 0 5px pink;
 }
 
 @media only screen and (max-width:690px) {
