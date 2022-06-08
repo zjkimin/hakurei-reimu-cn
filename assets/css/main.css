@@ -45,6 +45,7 @@
     color: white;
     text-shadow: 0 0 13px pink;
     animation: float 2s ease-in-out 0s infinite normal;
+    animation-play-state: paused;
 }
 
 #Moe {
@@ -56,6 +57,7 @@
     color: wheat;
     text-shadow: 0 0 5px pink;
     animation: float 2s ease-in-out 0s infinite normal;
+    animation-play-state: paused;
 }
 
 @media only screen and (max-width:690px) {
