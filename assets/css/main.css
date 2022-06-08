@@ -14,6 +14,19 @@
     src: url('https://cdn.jsdelivr.net/gh/zjkimin/hakurei-reimu-cn/assets/css/fonts/DFKoIn-W4-WIN-RKSJ-H-01.ttf');
 }
 
+
+@keyframes float {
+    0%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(0px,15px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+
 #text {
     position: fixed;
     /* text-align: center; */
@@ -21,7 +34,6 @@
     bottom: 50%;
     left: 0%;
     font-family: ReiMoo;
-    /* text-shadow: 7px 7px 2px black; */
 }
 
 #mtitle {
@@ -32,6 +44,7 @@
     font-size: 400%;
     color: white;
     text-shadow: 0 0 13px pink;
+    animation: float 2s ease-in-out 0s infinite normal;
 }
 
 #Moe {
@@ -42,6 +55,7 @@
     font-size: 150%;
     color: wheat;
     text-shadow: 0 0 5px pink;
+    animation: float 2s ease-in-out 0s infinite normal;
 }
 
 @media only screen and (max-width:690px) {
