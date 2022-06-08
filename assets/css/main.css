@@ -54,10 +54,15 @@
     bottom: 40%;
     left: 61%;
     font-size: 150%;
-    color: wheat;
+    text-decoration: none;
+    color: white;
     text-shadow: 0 0 5px pink;
     animation: float 2s ease 0s infinite normal;
     animation-play-state: paused;
+}
+
+#Moe:hover {
+    color: wheat;
 }
 
 @media only screen and (max-width:690px) {
