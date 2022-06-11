@@ -13,7 +13,7 @@ $(document).ready(() => {
     // sync with text animation
     video.currentTime=1.5
     // src: Foxtail-Grass Studio - 歳月-雲流れ- (岁月-云流-)
-    bgm = new Audio('https://ghproxy.com/https://raw.githubusercontent.com/zjkimin/hakurei-reimu-cn/main/assets/res/bgm.mp3');
+    bgm = new Audio('assets/res/bgm.mp3');
     bgm.load();
     // Chrome不允许自动播放了,不过还是要试一下
     bgm.addEventListener("canplaythrough", event => {
