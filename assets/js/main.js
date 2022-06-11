@@ -10,6 +10,8 @@ const judgePageChange = (cb) => {
 $(document).ready(() => {
     root = $('body');
     video = $('#background')[0];
+    // sync with text animation
+    video.currentTime=1.5
     // src: Foxtail-Grass Studio - 歳月-雲流れ- (岁月-云流-)
     bgm = new Audio('https://ghproxy.com/https://raw.githubusercontent.com/zjkimin/hakurei-reimu-cn/main/assets/res/bgm.mp3');
     bgm.load();
@@ -27,9 +29,9 @@ $(document).ready(() => {
     }
     // console.log(dom_tit,dom_moe)
     video.addEventListener('canplay', function (){
-        setTimeout(function(){
-            setTextAnimState('running');
-        },59);
+        // setTimeout(function(){
+        setTextAnimState('running');
+        // },0);
     });
     judgePageChange((status)=> {
         // console.log(status)
