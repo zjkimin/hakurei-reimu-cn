@@ -15,6 +15,8 @@ $(document).ready(() => {
     // src: Foxtail-Grass Studio - 歳月-雲流れ- (岁月-云流-)
     bgm = new Audio('assets/res/bgm.mp3');
     bgm.load();
+    bgm.loop = true;
+    bgm.autoplay = true;
     // Chrome不允许自动播放了,不过还是要试一下
     bgm.addEventListener("canplaythrough", event => {
         /* 音频可以播放；如果权限允许则播放 */
@@ -42,8 +44,6 @@ $(document).ready(() => {
     root.click(function () {
         // video.muted=false;
         video.play();
-        bgm.loop = true;
-        bgm.autoplay = true;
         bgm.play();
     })
 });
