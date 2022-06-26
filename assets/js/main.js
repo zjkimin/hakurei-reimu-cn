@@ -21,17 +21,17 @@ $(document).ready(() => {
         dom_moe.style.animationPlayState=state;
     }
     // console.log(dom_tit,dom_moe)
-    video.addEventListener('canplay', function (){
-        // setTimeout(function(){
-        setTextAnimState('running');
-        // },0);
-    });
-    judgePageChange((status)=> {
-        // console.log(status)
-        if (status=='visible'){
-            video.play();
-        }
-    });      
+    // video.addEventListener('canplay', function (){
+    //     // setTimeout(function(){
+    //     setTextAnimState('running');
+    //     // },0);
+    // });
+    // judgePageChange((status)=> {
+    //     // console.log(status)
+    //     if (status=='visible'){
+    //         video.play();
+    //     }
+    // });      
     root.click(function () {
         // video.muted=false;
         video.play();
