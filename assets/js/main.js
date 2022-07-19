@@ -4,7 +4,7 @@ $(document).ready(() => {
     // sync with text animation
     video.currentTime=1.5
     // src: Foxtail-Grass Studio - 歳月-雲流れ- (岁月-云流-)
-    bgm = new Audio('assets/res/bgm.mp3');
+    bgm = new Audio('https://static.hakurei.cc/stream/reimu_cn/bg/bgm.mp3');
     bgm.load();
     bgm.loop = true;
     bgm.autoplay = true;
